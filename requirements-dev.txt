@@ -23,7 +23,7 @@ more-itertools==7.0.0
 six==1.11.0
 attrs==18.1.0
 py==1.8.0
-more-itertools==4.1.0
+more-itertools==7.0.0
 pyup-update-attrs-19.1.0
 attrs==19.1.0
 six==1.12.0
