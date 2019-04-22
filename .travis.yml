@@ -2,8 +2,7 @@ language: python
 python:
   - 3.6
 install:
-  - pip install -r requirements.txt
-  - pip install pytest-cov
+  - pip install -r requirements.txt codecov
 script:
   - flake8
   - pytest libpythonpro --cov=libpythonpro
