@@ -8,3 +8,4 @@ install:
   - pytest libpythonpro --cov=libpythonpro
 after_success:
   - codecov
+  
