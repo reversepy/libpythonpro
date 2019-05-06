@@ -1,11 +1,19 @@
+# Disable sudo to speed up the build
+sudo: false
+
+# Set the build language to Python
 language: python
-python:
-  - 3.6
+
+# Set the python version to 3.6
+python: 3.6
+# Install the codecov pip dependency
 install:
-  - pip install -q -r requirements-dev.txt codecov
- script:
+- pip install -r requirements-dev.txt codecov
+
+script:
   - flake8
   - pytest libpythonpro --cov=libpythonpro
+  - coverage run setup.py
 after_success:
   - codecov
   
