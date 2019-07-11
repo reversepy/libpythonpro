@@ -36,3 +36,4 @@ def test_remetente_invalido(remetente):
             'Cursos python pro',
             'Primeira turma aberta'
         )
+        
