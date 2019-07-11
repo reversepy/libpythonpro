@@ -4,16 +4,17 @@ from libpythonpro.spam.enviador_de_email import Enviador, EmailInvalido
 
 
 def test_criar_enviador_de_emai():
-    enviador= Enviador()
+    enviador = Enviador()
     assert enviador is not None
+
 
 @pytest.mark.parametrize(
     'remetente',
-    ['foo@bar.com.br','rnixonaf@gmail.com']
+    ['foo@bar.com.br', 'rnixonaf@gmail.com']
 )
 def test_remetente(remetente):
     enviador = Enviador()
-    resultado=enviador.enviar(
+    resultado = enviador.enviar(
         remetente,
         'richardnixon@posteo.org',
         'Cursos python pro',
@@ -35,4 +36,3 @@ def test_remetente_invalido(remetente):
             'Cursos python pro',
             'Primeira turma aberta'
         )
-
