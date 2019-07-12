@@ -25,7 +25,7 @@ def test_remetente(remetente):
 
 @pytest.mark.parametrize(
     'remetente',
-    ['','rnixonaf']
+    ['', 'rnixonaf']
 )
 def test_remetente_invalido(remetente):
     enviador = Enviador()
@@ -36,4 +36,3 @@ def test_remetente_invalido(remetente):
             'Cursos python pro',
             'Primeira turma aberta'
         )
-        
